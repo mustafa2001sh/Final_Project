@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(243, 243, 243);
+  background-image: url(../images/linee.svg);
+  background-repeat: no-repeat;
+}
+
+.menu-area li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+nav {
+  grid-area: nav;
+  padding: 5px 10px 5px 5px;
+  text-align: right;
+  background: rgb(36, 36, 36);
+}
+.logo {
+  margin-left: 20px;
+  margin-top: 24px;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  width: auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.menu-area li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px;
+}
+.menu-area li a:hover {
+  border-bottom: 3px solid #3f6c9b;
+  border-radius: 2px;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "head head head"
+    "foot foot foot";
+  grid-gap: 40px;
+}
+header {
+  grid-area: head;
+  display: grid;
+  grid-template-areas:
+   "empty headings more"
+   ;
+}
+
+header .empty {
+  grid-area: empty;
+  width: 500px;
+}
+
+header .headings {
+  grid-area: headings;
+}
+
+
+footer {
+  grid-area: foot;
+  display: inline-flex;
+  margin-left: 430px;
+}
+
+.headings {
+  margin-top: 100px;
+  grid-area: heading;
+  display: inline-flex;
+  width: 500px;
+  font-weight: bold;
+}
+
+.headings h1 {
+  font-size: 50px;
+}
+.headings ul {
+  margin-top: 32px;
+}
+.headings .vl {
+  border-left: 4px solid #000;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+header a {
+  grid-area: more;
+  text-decoration: none;
+  color: #fff;
+  background: #242424;
+  padding-top: 5px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  font-size: 22px;
+  height: 30px;
+  width: 120px;
+  text-align: center;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+footer figure img {
+  height: 150px;
+}
+
+footer figure {
+  display: block;
+  text-align: center;
+  border: 3px solid #242424;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  overflow: hidden;
+  
+}
+
+footer figure figcaption {
+  background: #242424;
+  color: #fff;
+  padding: 10px;
+}

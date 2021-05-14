@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="container">
+    <header class="box ">
+      <nav>
+        <div class="logo">HEADPHONES</div>
+        <ul class="menu-area">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="FrequentlyAskedQuestions.html">FQAs</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="SignIn.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br>
+    <form action="#" method="POST" class="box form-box">
+      <h1>Sign Up</h1>
+      <input
+        class="input-text"
+        type="text"
+        name="newname"
+        placeholder="Username"
+        required
+      />
+
+      <input
+        class="input-text"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+
+      <input
+        class="input-text"
+        type="password"
+        name="newpassword"
+        placeholder="Password"
+        minlength="8"
+        required
+      />
+
+      <input
+        class="input-text"
+        type="password"
+        name="confirmpassword"
+        placeholder="Confirm Password"
+        minlength="8"
+        required
+      />
+      <br>
+      <label >Gender: </label>
+      <div class="select-gender sign-label">
+        <label> <input type="radio" name="gender" required />Male</label>
+        <label> <input type="radio" name="gender" />Female</label>
+      </div>
+      <input class="form-btn" type="submit" value="Sign Up" />
+      <label class="sign-label">You already hava an account? <a href="SignIn.html">SignIn</a></label>
+    <br>
+  </form>
+  </div>
+    
+  </body>
+</html>

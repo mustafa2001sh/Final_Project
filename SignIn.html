@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sign in</title>
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <nav>
+        <div class="logo">HEADPHONES</div>
+        <ul class="menu-area">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="FrequentlyAskedQuestions.html">FQAs</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="SignIn.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <form action="#" method="POST" class="box form-box" >
+      <h1>Sign In</h1>
+      <input
+        class="input-text"
+        type="text"
+        name="username"
+        placeholder="Username"
+        minlength="3"
+        maxlength="30"
+        required
+      />
+      <input
+        class="input-text"
+        type="password"
+        name="password"
+        placeholder="Password"
+        minlength="8"
+        required
+      />
+      <br>
+      <label class="input-checkbox"> <input type="checkbox" />Remember me </label>
+      <input class="form-btn" type="submit" value="Sign in" />
+      <label class="forgetPass-label"><a href="">Forget Password?</a></label>
+      <label class="sign-label">You don't hava an account?<a href="SignUp.html">SignUp</a></label>
+    <br>
+    </form>
+  </div>
+  </body>
+</html>

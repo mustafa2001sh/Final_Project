@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.menu-area li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+nav {
+  grid-area: nav;
+  padding: 5px 10px 5px 5px;
+  text-align: right;
+  background: rgb(36, 36, 36);
+}
+.logo {
+  margin-left: 20px;
+  margin-top: 24px;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  width: auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.menu-area li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px;
+}
+.menu-area li a:hover {
+  border-bottom: 3px solid #3f6c9b;
+  border-radius: 2px;
+}
+
+#container {
+  min-height: 90vh;
+  display: flex;
+}
+.left {
+  width: 50vw;
+  background-image: url(../images/mainP.png);
+  background-color: rgb(243, 243, 243);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+
+.right {
+  width: 50vw;
+  height: 35vh;
+  background-color: #fff;
+  display: grid;
+  grid-template-areas:
+    "headings headings headings"
+    "detials detials detials";
+  grid-gap: 40px;
+}
+
+.right .heading {
+  grid-area: headings;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.heading h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.heading .subHeading {
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+.heading .subHeading img {
+  width: 25px;
+}
+.heading .subHeading p {
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.rating1,
+.rating2 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+  padding-right: 35px;
+}
+
+.rating1 > span,
+.rating2 > span {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  font-size: 30px;
+  color: gold;
+}
+
+.rating1 > span::before {
+  content: "\2605";
+  position: absolute;
+}
+.rating1 > span:nth-child(1)::before {
+  content: "☆";
+}
+
+.detalis {
+  grid-area: detials;
+  width: 50vw;
+}
+.detalis p {
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 40px;
+}
+
+.detalis .dot {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.detalis .d1 {
+  background-color: rgb(243, 158, 46);
+  margin-left: 40px;
+}
+.detalis .d2 {
+  background-color: rgb(226, 65, 53);
+}
+.detalis .d3 {
+  background-color: rgb(183, 63, 199);
+}
+.detalis .d4 {
+  background-color: rgb(61, 184, 116);
+}
+
+.detalis a {
+  float: right;
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+  color: #fff;
+  background: #242424;
+  cursor: pointer;
+  font-weight: bold;
+}
+.detalis h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.detalis .rating2 {
+  text-align: center;
+  display: block;
+  padding: 0;
+}
+
+.detalis .rating2 > span {
+  font-size: 35px;
+}
+
+.detalis textarea {
+  margin: 20px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  width: 90%;
+  height: 50px;
+  margin-left: 35px;
+  resize: none;
+  transition: all 0.3s ease-in;
+}
+.rating2 > span:hover:before,
+.rating2 > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  cursor: pointer;
+}
+
+.detalis h2{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+}

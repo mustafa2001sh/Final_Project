@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>FAQs</title>
+  </head>
+  <body>
+    <div class="box container">
+      <header>
+        <nav>
+          <div class="logo">HEADPHONES</div>
+          <ul class="menu-area">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="FrequentlyAskedQuestions.html">FQAs</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+
+            <li><a href="SignIn.html">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="faq-con">
+        <h1>Frequently Asked Questions (FAQs)</h1>
+        <br />
+        <div class="ques-ans">
+          <h3>Why We Built Such This Website ?</h3>
+
+          <p>
+            Our website has been built to help the other ecommerce websites to
+            find and get the product that interests our customers and gather
+            thier comments about the product to improvement it as much as
+            possible
+          </p>
+        </div>
+        <div class="ques-ans">
+          <h3>How To Create An Impressive Website?</h3>
+
+          <p>
+            The beauty of a site lies in the way it operates and how user
+            friendly it is. Ensure that your site is fast, easy to use,
+            professional and attractive. Also make sure that you are able to
+            fulfill the orders very promptly without any delay. In case you are
+            unable to offer the service, make sure that your customer is
+            informed about it via email.
+          </p>
+        </div>
+        <div class="ques-ans">
+          <h3>
+            Why Is It Important For Business Owners To Create An Ecommerce Site?
+          </h3>
+
+          <p>
+            Today, people have very less time to purchase items, by going to
+            physical stores. They prefer to browse their mobile devices or PC
+            and shop online. Having an ecommerce site for your business will
+            help you to capture this market base and keep your customers
+            informed about all your latest products and services.
+          </p>
+        </div>
+        <div class="ques-ans">
+          <h3>Who's The Owner Of The Website ?</h3>
+
+          <p>
+            My name is Mustafa N. Shehab from Palestine, I'm Studying Cyber
+            Security Information Engineering, <a href="Mustafa_CV.html">Click Here</a> to see
+            My CV.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <p>@ follow us:</p>
+        <a href="#"><i class="fab fa-facebook-f"></i> </a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </footer>
+    </div>
+    <script>
+      const faqcon = document.getElementsByClassName('ques-ans');
+  for(i=0; i< faqcon.length; i++){
+    faqcon[i].addEventListener('click',function(){
+      this.classList.toggle('active')
+    })
+  }
+  </script>
+  </body>
+</html>
